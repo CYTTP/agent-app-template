@@ -1,0 +1,22 @@
+﻿root = true
+
+# 所有文件默认规则
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 源码统一 2 空格（最常见的文件类型）
+[*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,css,scss,sass,less,styl,json,yaml,yml,html}]
+indent_size = 2
+
+# package.json
+[package.json]
+indent_size = 2
+
+# pnpm-workspace
+[pnpm-workspace.yaml]
+quote_type = single

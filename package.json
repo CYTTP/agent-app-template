@@ -1,0 +1,29 @@
+{
+  "name": "agent-app-template",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A minimal full-stack agent app template",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "typecheck:web": "pnpm --filter web typecheck",
+    "typecheck:server": "pnpm --filter server typecheck",
+    "typecheck:shared": "pnpm --filter @shared/main typecheck",
+    "typecheck:all": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md}\""
+  },
+  "packageManager": "pnpm@11.0.8",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "volta": {
+    "node": "24.12.0",
+    "pnpm": "11.0.8"
+  },
+  "devDependencies": {
+    "@prettier/plugin-oxc": "^0.1.4",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "turbo": "^2.9.10"
+  }
+}
