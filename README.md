@@ -42,7 +42,7 @@ pnpm dev
 启动后可访问：
 
 - 前端: [http://localhost:5173](http://localhost:5173)
-- 后端: [http://localhost:3000/api/health](http://localhost:3000/api/health)
+- 后端: [http://localhost:8787/api/health](http://localhost:8787/api/health)
 
 ## Docker 启动
 
@@ -61,7 +61,7 @@ docker compose up --build
 启动后可访问：
 
 - 页面: [http://localhost:8080](http://localhost:8080)
-- 健康接口: [http://localhost:8080/api/health](http://localhost:8080/api/health)
+- 健康接口: [http://localhost:8787/api/health](http://localhost:8787/api/health)
 
 ## 常用命令
 
