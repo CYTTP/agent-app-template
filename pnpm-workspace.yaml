@@ -10,6 +10,10 @@ registry:
 
 preferWorkspacePackages: true
 sharedWorkspaceLockfile: true
+overrides:
+  cors: 2.8.5
+  '@nestjs/platform-express>cors': 2.8.5
 allowBuilds:
   '@nestjs/core': true
+  better-sqlite3: true
   esbuild: false

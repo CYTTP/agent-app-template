@@ -5,7 +5,10 @@ services:
       dockerfile: docker/server.Dockerfile
     restart: unless-stopped
     environment:
-      PORT: ${SERVER_PORT:-3000}
+      SERVER_PORT: 3000
+      DATABASE_URL: /data/sqlite.db
+    volumes:
+      - server_data:/data
     healthcheck:
       test:
         [
@@ -35,3 +38,6 @@ services:
       timeout: 5s
       retries: 5
       start_period: 10s
+
+volumes:
+  server_data:

@@ -42,6 +42,10 @@ Thumbs.db
 
 # Database & Storage
 apps/server/storage/
+apps/server/db/sqlite.db
+apps/server/db/sqlite.db-shm
+apps/server/db/sqlite.db-wal
+apps/server/db/sqlite.db-journal
 apps/server/db/*.sqlite
 apps/server/db/*.sqlite-shm
 apps/server/db/*.sqlite-wal

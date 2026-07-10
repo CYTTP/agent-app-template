@@ -6,18 +6,26 @@
     "dev": "tsx watch src/main.ts",
     "build": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "start": "tsx src/main.ts"
+    "start": "tsx src/main.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "tsx src/common/database/migrate.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.0",
     "@nestjs/core": "^11.1.0",
     "@nestjs/platform-express": "^11.1.0",
     "@shared/main": "workspace:*",
+    "better-sqlite3": "^12.11.1",
+    "drizzle-orm": "^0.44.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2"
+    "rxjs": "^7.8.2",
+    "zod": "^4.1.5"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
     "@types/node": "^22.15.0",
+    "drizzle-kit": "^0.31.0",
     "tsx": "^4.19.0",
     "typescript": "catalog:"
   }
