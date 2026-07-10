@@ -10,7 +10,7 @@ async function bootstrap() {
     credentials: true,
   });
 
-  const port = Number(process.env.PORT ?? 3000);
+  const port = Number(process.env.SERVER_PORT ?? 8787);
   await app.listen(port);
 
   console.log(`Server running on http://localhost:${port}`);

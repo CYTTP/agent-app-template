@@ -30,7 +30,7 @@ export default function App() {
       <AntdApp>
         <div className="app-shell">
           <Card className="status-card">
-            <Space direction="vertical" size={20} style={{ width: '100%' }}>
+            <Space orientation="vertical" size={20} style={{ width: '100%' }}>
               <Space align="center">
                 <Tag color="cyan">Agent Template</Tag>
                 <Text type="secondary">React + NestJS + pnpm workspace</Text>
@@ -45,7 +45,7 @@ export default function App() {
               {!isLoading && error instanceof Error ? (
                 <Alert
                   type="error"
-                  message="接口请求失败"
+                  title="接口请求失败"
                   description={error.message}
                   showIcon
                 />
@@ -53,7 +53,7 @@ export default function App() {
 
               {!isLoading && data ? (
                 <Card size="small">
-                  <Space direction="vertical" size={12}>
+                  <Space orientation="vertical" size={12}>
                     <Space>
                       <Text strong>状态</Text>
                       <Tag color="green">{data.data?.status ?? 'unknown'}</Tag>

@@ -11,4 +11,5 @@ registry:
 preferWorkspacePackages: true
 sharedWorkspaceLockfile: true
 allowBuilds:
-  esbuild: set this to true or false
+  '@nestjs/core': true
+  esbuild: false

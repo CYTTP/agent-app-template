@@ -20,5 +20,5 @@ export function useHealthQuery() {
     queryFn: fetchHealth,
     staleTime: 30_000,
     retry: 1,
-  });
+  });   
 }
