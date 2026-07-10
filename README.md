@@ -8,8 +8,8 @@
 
 ```text
 apps/
-  server/      # NestJS 后端，提供 /api/health
-  web/         # React + Vite 前端，单页展示健康状态
+  server/      # NestJS 后端
+  web/         # React + Vite 前端
 
 packages/
   shared/      # 前后端共享 API 路径与类型
